@@ -26,7 +26,8 @@ public class VuplexWebView
         Web.SetCameraAndMicrophoneEnabled(true);
         webView = prefab;
         
-        webView.InitialUrl = urlConfig.BuildUrl(loginToken);
+        // webView.InitialUrl = urlConfig.BuildUrl(loginToken);
+        webView.InitialUrl = "http://localhost:8012";
         webView.DragMode = DragMode.DragWithinPage;
 
         webView.Initialized += (sender, args) =>
